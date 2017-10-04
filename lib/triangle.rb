@@ -19,11 +19,10 @@ class Triangle
       :isosceles
     end
   end
+end
 
 class TriangleError < StandardError
   def message
     "Please enter a valid triangle."
   end
-end
-
 end
