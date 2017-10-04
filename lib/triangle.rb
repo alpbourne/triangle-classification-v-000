@@ -15,10 +15,8 @@ class Triangle
       :equilateral
     elsif (@l1 != @l2) && (@l1 != @l3) && (@l2 != @l3)
       :scalene
-    elsif @l1 == @l2 || @l1 == @l3 || @l2 == @l3
+    else @l1 == @l2 || @l1 == @l3 || @l2 == @l3
       :isosceles
-    else
-      raise TriangleError
     end
   end
 
