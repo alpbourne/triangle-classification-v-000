@@ -1,5 +1,3 @@
-require 'pry'
-
 class Triangle
 
   attr_accessor :l1, :l2, :l3
@@ -13,7 +11,6 @@ class Triangle
   def kind
     if @l1 <= 0 || @l2 <= 0 || @l3 <= 0 || @l1 + @l2 <= @l3 || @l2 + @l3 <= @l1|| @l3 + @l1 <= @l2
       raise TriangleError
-      binding.pry
     elsif (@l1 == @l2) && (@l2 == @l3)
       :equilateral
     elsif (@l1 != @l2) && (@l1 != @l3) && (@l2 != @l3)
