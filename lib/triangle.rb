@@ -1,3 +1,5 @@
+require 'pry'
+
 class Triangle
 
   attr_accessor :l1, :l2, :l3
